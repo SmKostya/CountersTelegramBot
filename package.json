@@ -1,0 +1,41 @@
+{
+  "name": "counters_infobot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "go.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "fast-csv": "^4.0.2",
+    "mysql": "^2.17.1",
+    "node-schedule": "^1.3.2",
+    "node-telegram-bot-api": "^0.40.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.3",
+    "@babel/core": "^7.8.3",
+    "@babel/node": "^7.8.3",
+    "@babel/preset-env": "^7.8.3"
+  },
+  "scripts": {
+    "start": "node go.js",
+    "dev": "babel-node src/dev.js",
+    "go": "babel-node src/go.js",
+    "babel-node": "babel-node",
+    "build": "babel src --out-dir dist --source-maps inline",
+    "prepublishOnly": "npm run build"
+  },
+  "engines": {
+    "node": "12.13.1",
+    "npm": "6.12.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SmKostya/InfoBot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SmKostya/InfoBot/issues"
+  },
+  "homepage": "https://github.com/SmKostya/InfoBot#readme"
+}
