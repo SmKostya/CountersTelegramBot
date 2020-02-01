@@ -9,7 +9,7 @@ var bot = new TelegramBot(telegram, {
     polling: true
 });
 
-mysql.createPool(server);
+var pool = mysql.createPool(server);
 
 function sendTime(time, chatId, text, options) {
     new schedule.scheduleJob({
